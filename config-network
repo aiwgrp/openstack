@@ -1,0 +1,12 @@
+cat << EOF > /etc/network/interfaces
+auto lo
+iface lo inet loopback
+
+# NIC MGNT
+auto eno16777736
+iface eno16777736 inet dhcp
+
+# NIC EXT
+auto eno33554992
+iface eno33554992 inet dhcp
+EOF
